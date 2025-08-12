@@ -20,10 +20,10 @@ jobs:
           sphinx-apidoc -o ./source .. -f
           make html
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-pages@v3
+        uses: peaceiris/actions-page@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         with:
-          publish_branch: pages
+          publish_branch: page
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
           force_orphan: true
