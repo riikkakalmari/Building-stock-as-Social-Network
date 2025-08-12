@@ -27,3 +27,21 @@ Installation
 Anaconda Distribution comes with NumPy, Pandas and Scikit-learn -packages. 
 Pandas and NumPy are easy to install with pip but Scikit-learn needs more care. It is why we recommend using Anaconda Navigator.   
 For BuildingNetwork simple copy-paste of the file BuildingNetwork.py is enough.
+
+Contributing
+============
+
+Licence
+=======
+This work is licensed under CC BY-NC-SA 4.0:
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
+Citation
+========
+
+
+Contact
+=======
+riikka.kalmari@protonmail.com
