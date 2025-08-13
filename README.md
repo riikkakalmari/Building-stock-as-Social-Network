@@ -10,10 +10,11 @@ Prerequisites
 =============
 
 The module is based on the following packages:
-    * NumPy
-    * Pandas
-    * Scikit-learn
-    * scipy.hierarchical.clustering
+    
+   * NumPy
+   * Pandas
+   * Scikit-learn
+   * scipy.hierarchical.clustering
 
 .. :bibliography::
 
