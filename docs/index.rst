@@ -10,7 +10,7 @@ Welcome to Building-stocks-as-Social-Networks's documentation!
    :maxdepth: 2
    :caption: Contents:
    
-   readme.md
+   README.md
    modules
 
 Indices and tables
@@ -19,4 +19,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
 
