@@ -19,6 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="StokcsNetwork module" href="StokcsNetwork.html" />
     <link rel="prev" title="BuildingNetwork module" href="BuildingNetwork.html" /> 
 </head>
 
@@ -46,28 +47,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Data2014-2020</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="BuildingNetwork.html">BuildingNetwork module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">NetworkFunctions module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.Flow"><code class="docutils literal notranslate"><span class="pre">Flow</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Flow.buildingdatas"><code class="docutils literal notranslate"><span class="pre">Flow.buildingdatas</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Flow.flowframe"><code class="docutils literal notranslate"><span class="pre">Flow.flowframe</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Flow.networks"><code class="docutils literal notranslate"><span class="pre">Flow.networks</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Flow.start"><code class="docutils literal notranslate"><span class="pre">Flow.start</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Flow.step"><code class="docutils literal notranslate"><span class="pre">Flow.step</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Flow.time"><code class="docutils literal notranslate"><span class="pre">Flow.time</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.Sankey"><code class="docutils literal notranslate"><span class="pre">Sankey</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Sankey.dendrograms"><code class="docutils literal notranslate"><span class="pre">Sankey.dendrograms</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Sankey.fplot"><code class="docutils literal notranslate"><span class="pre">Sankey.fplot()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Sankey.linkframe"><code class="docutils literal notranslate"><span class="pre">Sankey.linkframe</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#NetworkFunctions.Sankey.nodeframe"><code class="docutils literal notranslate"><span class="pre">Sankey.nodeframe</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.add_data"><code class="docutils literal notranslate"><span class="pre">add_data()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.combinations"><code class="docutils literal notranslate"><span class="pre">combinations()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.dist"><code class="docutils literal notranslate"><span class="pre">dist()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.distance"><code class="docutils literal notranslate"><span class="pre">distance()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#NetworkFunctions.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="StokcsNetwork.html">StokcsNetwork module</a></li>
 </ul>
 </li>
 </ul>
@@ -99,74 +85,32 @@
              
   <section id="module-NetworkFunctions">
 <span id="networkfunctions-module"></span><h1>NetworkFunctions module<a class="headerlink" href="#module-NetworkFunctions" title="Link to this heading"></a></h1>
-<p>Created on Sun Jul 27 13:31:06 2025</p>
-<p>&#64;author: pvrika cite{}</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">NetworkFunctions.</span></span><span class="sig-name descname"><span class="pre">Flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">starttime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkFunctions.Flow" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="BuildingNetwork.html#BuildingNetwork.Network" title="BuildingNetwork.Network"><code class="xref py py-class docutils literal notranslate"><span class="pre">Network</span></code></a></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow.buildingdatas">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buildingdatas</span></span><a class="headerlink" href="#NetworkFunctions.Flow.buildingdatas" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow.flowframe">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">flowframe</span></span><a class="headerlink" href="#NetworkFunctions.Flow.flowframe" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow.networks">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">networks</span></span><a class="headerlink" href="#NetworkFunctions.Flow.networks" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow.start">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start</span></span><a class="headerlink" href="#NetworkFunctions.Flow.start" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow.step">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">step</span></span><a class="headerlink" href="#NetworkFunctions.Flow.step" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Flow.time">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">time</span></span><a class="headerlink" href="#NetworkFunctions.Flow.time" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="NetworkFunctions.Sankey">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">NetworkFunctions.</span></span><span class="sig-name descname"><span class="pre">Sankey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clustersize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clusternumber</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkFunctions.Sankey" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="BuildingNetwork.html#BuildingNetwork.Dendrogram" title="BuildingNetwork.Dendrogram"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dendrogram</span></code></a></p>
+<p>Created on Wed Aug 13 13:02:11 2025</p>
+<p>&#64;author: pvrika</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="NetworkFunctions.add_data">
+<span class="sig-prename descclassname"><span class="pre">NetworkFunctions.</span></span><span class="sig-name descname"><span class="pre">add_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkFunctions.add_data" title="Link to this definition"></a></dt>
+<dd><p>A helper to read the given datasheat. Accepts .txt, .csv, pandas.DataFrame, .json and excel.</p>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>file<span class="classifier">string</span></dt><dd><p>The path and filename of the building stock data to be analysized.</p>
+</dd>
+</dl>
+</section>
+<section id="raises">
+<h2>Raises<a class="headerlink" href="#raises" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>TypeError</dt><dd><p>Prompts user to verify the path, filename and format of the dataset to be analysized.</p>
+</dd>
+</dl>
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Sankey.dendrograms">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dendrograms</span></span><a class="headerlink" href="#NetworkFunctions.Sankey.dendrograms" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="NetworkFunctions.Sankey.fplot">
-<span class="sig-name descname"><span class="pre">fplot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkFunctions.Sankey.fplot" title="Link to this definition"></a></dt>
-<dd><p>Sankey plot setup</p>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Sankey.linkframe">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linkframe</span></span><a class="headerlink" href="#NetworkFunctions.Sankey.linkframe" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="NetworkFunctions.Sankey.nodeframe">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nodeframe</span></span><a class="headerlink" href="#NetworkFunctions.Sankey.nodeframe" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
+<dl class="simple">
+<dt>apu2<span class="classifier">pandas.DataFrame</span></dt><dd><p>The building stock data as a pandas.DataFrame.</p>
+</dd>
+</dl>
 </section>
 </dd></dl>
 
@@ -202,11 +146,6 @@
 <span class="sig-prename descclassname"><span class="pre">NetworkFunctions.</span></span><span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkFunctions.distance" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="NetworkFunctions.main">
-<span class="sig-prename descclassname"><span class="pre">NetworkFunctions.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkFunctions.main" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
 </section>
 
 
@@ -214,6 +153,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="BuildingNetwork.html" class="btn btn-neutral float-left" title="BuildingNetwork module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="StokcsNetwork.html" class="btn btn-neutral float-right" title="StokcsNetwork module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

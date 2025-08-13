@@ -66,14 +66,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#BuildingNetwork.Pregraph.distanceframe"><code class="docutils literal notranslate"><span class="pre">Pregraph.distanceframe</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#BuildingNetwork.add_data"><code class="docutils literal notranslate"><span class="pre">add_data()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#BuildingNetwork.combinations"><code class="docutils literal notranslate"><span class="pre">combinations()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#BuildingNetwork.dist"><code class="docutils literal notranslate"><span class="pre">dist()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#BuildingNetwork.distance"><code class="docutils literal notranslate"><span class="pre">distance()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#BuildingNetwork.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="NetworkFunctions.html">NetworkFunctions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StokcsNetwork.html">StokcsNetwork module</a></li>
 </ul>
 </li>
 </ul>
@@ -194,76 +191,17 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="BuildingNetwork.add_data">
-<span class="sig-prename descclassname"><span class="pre">BuildingNetwork.</span></span><span class="sig-name descname"><span class="pre">add_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BuildingNetwork.add_data" title="Link to this definition"></a></dt>
-<dd><p>A helper to read the given datasheat. Accepts .txt, .csv, pandas.DataFrame, .json and excel.</p>
-<section id="id3">
-<h2>Parameters<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>file<span class="classifier">string</span></dt><dd><p>The path and filename of the building stock data to be analysized.</p>
-</dd>
-</dl>
-</section>
-<section id="raises">
-<h2>Raises<a class="headerlink" href="#raises" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>TypeError</dt><dd><p>Prompts user to verify the path, filename and format of the dataset to be analysized.</p>
-</dd>
-</dl>
-</section>
-<section id="id4">
-<h2>Returns<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>apu2<span class="classifier">pandas.DataFrame</span></dt><dd><p>The building stock data as a pandas.DataFrame.</p>
-</dd>
-</dl>
-</section>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="BuildingNetwork.combinations">
-<span class="sig-prename descclassname"><span class="pre">BuildingNetwork.</span></span><span class="sig-name descname"><span class="pre">combinations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BuildingNetwork.combinations" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="BuildingNetwork.dist">
-<span class="sig-prename descclassname"><span class="pre">BuildingNetwork.</span></span><span class="sig-name descname"><span class="pre">dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">set1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BuildingNetwork.dist" title="Link to this definition"></a></dt>
-<dd><p>Jaccard distance between two sets is one minus the ratio between the cardinality of the intersection and the union of the sets.</p>
-<section id="id5">
-<h2>Parameters<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>set1<span class="classifier">set</span></dt><dd><p>A set of objects.</p>
-</dd>
-<dt>set2<span class="classifier">set</span></dt><dd><p>A set of objects.</p>
-</dd>
-</dl>
-</section>
-<section id="id6">
-<h2>Returns<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>float:</dt><dd><p>Jaccard distance between set1 and set2.</p>
-</dd>
-</dl>
-</section>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="BuildingNetwork.distance">
-<span class="sig-prename descclassname"><span class="pre">BuildingNetwork.</span></span><span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BuildingNetwork.distance" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="BuildingNetwork.main">
 <span class="sig-prename descclassname"><span class="pre">BuildingNetwork.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BuildingNetwork.main" title="Link to this definition"></a></dt>
 <dd><p>Performed if __name__ == ‘__main__’.</p>
-<section id="id7">
-<h2>Parameters<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<section id="id3">
+<h2>Parameters<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>sys.argv[1]: int, desired minimum clustersize.</p>
 <p>sys.argv[2]: int, desired maximum number of clusters with number of members over clustersize.</p>
 <p>sys.argv[3]: file name or file path of the building stock data.</p>
 </section>
-<section id="id8">
-<h2>Returns<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<section id="id4">
+<h2>Returns<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>Savefiles distanceframe_{filename}, nodelista_{filename}, Z_{filename}, clusterings_{filename}, Dendrogram.data_{filename}, dendrfig_{file[:-3]}pdf and tex_{file}[:-3]texb.</p>
 </section>
 </dd></dl>
