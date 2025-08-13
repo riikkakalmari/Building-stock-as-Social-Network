@@ -11,7 +11,8 @@ Welcome to Building-stocks-as-Social-Networks's documentation!
    :caption: Contents:
    
    modules
-   readme.rst
+
+   README.rst
 
 Indices and tables
 ==================
