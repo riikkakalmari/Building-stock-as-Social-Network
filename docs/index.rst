@@ -9,7 +9,8 @@ Welcome to Building-stocks-as-Social-Networks's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   
+   readme.md
    modules
 
 Indices and tables
@@ -18,3 +19,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
