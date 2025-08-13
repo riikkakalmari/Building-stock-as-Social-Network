@@ -10,8 +10,8 @@ Welcome to Building-stocks-as-Social-Networks's documentation!
    :maxdepth: 2
    :caption: Contents:
    
-   README.rst
    modules
+   readme.rst
 
 Indices and tables
 ==================
